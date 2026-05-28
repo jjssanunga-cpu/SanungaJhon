@@ -1,0 +1,9 @@
+class Dispositivo{
+    marca:string;
+    modelo:string;
+    serie:number;
+
+    conectar():string{
+        
+    }
+}

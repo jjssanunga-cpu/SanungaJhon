@@ -1,0 +1,11 @@
+class Celular extends Dispositivo{
+    conexion: string;
+    numeroCelular: number;
+    almacenamiento: number;
+    memoriaRam: number;
+
+    llamar():string{
+        return "Llamando"
+    }
+
+}

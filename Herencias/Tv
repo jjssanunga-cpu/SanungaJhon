@@ -1,0 +1,11 @@
+class Tv extends Dispositivo{
+    pulgadas: number;
+    resolucion: string;
+    entradasHdmi: number;
+
+
+
+    transmitir():string{
+        return "Transmitiendo...";
+    }
+}
