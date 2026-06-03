@@ -1,9 +1,22 @@
 class Dispositivo{
-    marca:string;
-    modelo:string;
-    serie:number;
+    marca:string="";
+    modelo:string="";
+    serie:number=0;
 
     conectar():string{
         
     }
+}
+
+import { Dispositivo } from './clases/Dispositivo'; 
+
+const miDispositivo = new Dispositivo();
+miDispositivo.marca = 'Sony';
+miDispositivo.modelo = 'XBR-55';
+miDispositivo.serie = 1540; 
+
+if (miDispositivo.serie < 1000) {
+    console.log(`El dispositivo de marca ${miDispositivo.marca} pertenece al lote ANTIGUO.`);
+} else {
+    console.log(`El dispositivo de marca ${miDispositivo.marca} pertenece al lote NUEVO.`);
 }

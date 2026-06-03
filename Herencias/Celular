@@ -1,11 +1,26 @@
+
 class Celular extends Dispositivo{
-    conexion: string;
-    numeroCelular: number;
-    almacenamiento: number;
-    memoriaRam: number;
+    conexion: string="";
+    numeroCelular: number=0;
+    almacenamiento: number=0;
+    memoriaRam: number=0;
 
     llamar():string{
         return "Llamando"
     }
 
 }
+
+import { Celular } from './clases/Celular'; 
+const miCelular = new Celular();
+miCelular.conexion = '5G';
+miCelular.numeroCelular = 987654321;
+miCelular.almacenamiento = 128;
+miCelular.memoriaRam = 8; 
+
+if (miCelular.memoriaRam >= 6) {
+    console.log(`El celular ${miCelular.marca} ${miCelular.modelo} tiene ${miCelular.memoriaRam}GB de RAM. ¡Es de gama alta!`);
+} else {
+    console.log(`El celular ${miCelular.marca} ${miCelular.modelo} tiene ${miCelular.memoriaRam}GB de RAM. Es de gama de entrada.`);
+}
+

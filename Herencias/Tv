@@ -1,11 +1,22 @@
 class Tv extends Dispositivo{
-    pulgadas: number;
-    resolucion: string;
-    entradasHdmi: number;
+    pulgadas: number=0;
+    resolucion: string="";
+    entradasHdmi: number=0;
 
 
 
     transmitir():string{
         return "Transmitiendo...";
     }
+}
+
+const miTv = new Tv();
+miTv.pulgadas = 55;
+miTv.resolucion = '4K';
+miTv.entradasHdmi = 3;
+
+if (miTv.pulgadas >= 50) {
+    console.log(`La TV de ${miTv.pulgadas} pulgadas es una TV grande`);
+} else {
+    console.log(`La TV de ${miTv.pulgadas} pulgadas es una TV pequeña`);
 }
